@@ -61,6 +61,7 @@ public class Main {
 
         System.out.println("In my 10 experiments LinkedList was faster 9 times and ArrayList was faster only 1 time");
 
+        /*---------------------------------------------------------------------------------------*/
         // 2. Insert  new 1000 elements  on the  beginning, on  the middle  and on the end of ones.
         // Compare time intervals.
 
@@ -137,6 +138,8 @@ public class Main {
                 + addingToLinkedEnd + " ms. to add elements on the end\n");
 
         System.out.println("The fastest way to add elements to LinkedList: beginning and end of list");
+
+        /*---------------------------------------------------------------------------------------*/
         // 3. Update 1000 elements  from the  beginning, from  the middle  and from the end of ones.
         // Compare time intervals.
 
@@ -203,9 +206,9 @@ public class Main {
         // timestamp for finish point after updating elements on the end
         LocalDateTime timestamp15 = LocalDateTime.now();
 
-        long updatingLinkedBeginning = ChronoUnit.MILLIS.between(timestamp4, timestamp5);
-        long updatingLinkedMiddle = ChronoUnit.MILLIS.between(timestamp5, timestamp6);
-        long updatingLinkedEnd = ChronoUnit.MILLIS.between(timestamp6, timestamp7);
+        long updatingLinkedBeginning = ChronoUnit.MILLIS.between(timestamp12, timestamp13);
+        long updatingLinkedMiddle = ChronoUnit.MILLIS.between(timestamp13, timestamp14);
+        long updatingLinkedEnd = ChronoUnit.MILLIS.between(timestamp14, timestamp15);
 
         System.out.println("For LinkedList it takes: \n"
                 + updatingLinkedBeginning + " ms. to update elements on the beginning;\n"
@@ -214,6 +217,7 @@ public class Main {
 
         System.out.println("The fastest point to update elements to LinkedList: begining and end of list");
 
+        /*---------------------------------------------------------------------------------------*/
         // 4. Delete 1000 elements  from the  beginning, from  the middle  and from the end of ones.
         // Compare time intervals.
         System.out.println("-------------------------------------------------------------------");
@@ -242,9 +246,9 @@ public class Main {
         // timestamp for finish point after deleting elements on the end
         LocalDateTime timestamp19 = LocalDateTime.now();
 
-        long deletingArrayBeginning = ChronoUnit.MILLIS.between(timestamp8, timestamp9);
-        long deletingArrayMiddle = ChronoUnit.MILLIS.between(timestamp9, timestamp10);
-        long deletingArrayEnd = ChronoUnit.MILLIS.between(timestamp10, timestamp11);
+        long deletingArrayBeginning = ChronoUnit.MILLIS.between(timestamp16, timestamp17);
+        long deletingArrayMiddle = ChronoUnit.MILLIS.between(timestamp17, timestamp18);
+        long deletingArrayEnd = ChronoUnit.MILLIS.between(timestamp18, timestamp19);
 
         System.out.println("For ArrayList it takes: \n"
                 + deletingArrayBeginning + " ms. to delete elements on the beginning;\n"
@@ -279,9 +283,9 @@ public class Main {
         // timestamp for finish point after deleting elements on the end
         LocalDateTime timestamp23 = LocalDateTime.now();
 
-        long deletingLinkedBeginning = ChronoUnit.MILLIS.between(timestamp4, timestamp5);
-        long deletingLinkedMiddle = ChronoUnit.MILLIS.between(timestamp5, timestamp6);
-        long deletingLinkedEnd = ChronoUnit.MILLIS.between(timestamp6, timestamp7);
+        long deletingLinkedBeginning = ChronoUnit.MILLIS.between(timestamp20, timestamp21);
+        long deletingLinkedMiddle = ChronoUnit.MILLIS.between(timestamp21, timestamp22);
+        long deletingLinkedEnd = ChronoUnit.MILLIS.between(timestamp22, timestamp23);
 
         System.out.println("For LinkedList it takes: \n"
                 + deletingLinkedBeginning + " ms. to delete elements on the beginning;\n"
